@@ -8,6 +8,100 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+ 
+ <style>
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    @media (max-width: 991.98px) {
+      .col-12 > .card.two-column-mobile {
+        display: flex;
+        flex-direction: row;
+      }
+      .col-12 > .card.two-column-mobile > .personal-info {
+        flex: 0 0 45%;
+        max-width: 45%;
+      }
+      .col-12 > .card.two-column-mobile > .contact-info {
+        flex: 0 0 55%;
+        max-width: 55%;
+      }
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+      .personal-info h5,
+      .personal-info p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .profile-img {
+        width: 70px;
+        height: 70px;
+      }
+      .personal-info h5,
+      .personal-info p {
+        font-size: 0.9rem;
+      }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .contact-info .contact-details,
+    .contact-info .social-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .contact-info .contact-details h6,
+    .contact-info .social-links h6,
+    .contact-info .contact-details p,
+    .contact-info .social-links a {
+      white-space: nowrap;
+    }
+
+    @media (max-width: 991.98px) {
+      .contact-info h6,
+      .contact-info p,
+      .contact-info a {
+        font-size: 0.85rem;
+      }
+    }
+    @media (max-width: 1000px) {
+      .contact-info h6,
+      .contact-info p,
+      .contact-info a,
+      .social-links a,
+      .social-links i {
+        font-size: 0.65rem !important;
+      }
+    }
+    @media (max-width:1000px) {
+  .contact-info h6.fw-bold.mb-3 {
+    margin-bottom: 0.25rem !important;
+  }
+  .contact-info .row.pt-3 h6.fw-bold.mb-3 {
+    margin-bottom: 0.25rem !important;
+  }
+  .contact-info .contact-details p.mb-4 {
+    margin-bottom: 0.3rem !important;
+  }
+}
+@media (max-width: 1000px) {
+  .personal-info .row.mb-5 {
+    margin-bottom: 0 !important;
+  }
+}
+  </style>
 </head>
 
 <body>
@@ -16,42 +110,49 @@
 
     <div class="row">
 
-      <div class="col-lg-3 col-md-4 col-sm-12">
-        <div class="card">
-
-          <!-- Personal Information -->
-          <img src="https://i.pinimg.com/736x/1b/62/b5/1b62b54b4bc754fa4a2980f77bd15a6b.jpg" class="rounded-circle img-fluid mt-4 mx-auto" alt="Profile Picture" width="230">
-          <div class="card-body text-center">
-            <h5 class="card-title">Your name here</h5>
-            <p class="card-text text-muted">
-              <i class="bi bi-geo-alt-fill"></i> Your Address Here
-            </p>
-          </div>
-
-          <!-- Contact Information -->
-          <div class="row mx-4 pt-5">
-            <div class="col">
-              <h6 class="fw-bold mb-3">CONTACT INFORMATION:</h6>
-              <p class="mb-1"><i class="bi bi-telephone-fill"></i> +63 999 999 9999</p>
-              <p class="mb-1"><i class="bi bi-envelope-fill"></i> yourname@email.com</p>
+      <div class="col-xl-3 col-lg-4 col-12 mb-4">
+        <div class="card two-column-mobile">
+          
+          <!-- Personal Information Column -->
+          <div class="col-12 personal-info">
+            <div class="row mb-5 text-center">
+              <div class="mt-4 mx-auto">
+                <img src="https://i.pinimg.com/736x/1b/62/b5/1b62b54b4bc754fa4a2980f77bd15a6b.jpg" 
+                     class="rounded-circle img-fluid profile-img" alt="Profile Picture">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Rowel Gabriel Mangabat</h5>
+                <p class="card-text text-muted">
+                  <i class="bi bi-geo-alt-fill"></i> Batangas, Philippines
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Social Links -->
-          <div class="row mx-4 mb-4 pt-5">
-            <div class="col">
-              <h6 class="fw-bold mb-3">SOCIAL LINKS:</h6>
-              <a href="#" class="text-decoration-none me-3" style="color:#1877F2;"><i class="bi bi-facebook fs-4"></i></a>
-              <a href="#" class="text-decoration-none me-3" style="color:#E4405F;"><i class="bi bi-instagram fs-4"></i></a>
-              <a href="#" class="text-decoration-none me-3" style="color:#000;"><i class="bi bi-twitter-x fs-4"></i></a>
-              <a href="#" class="text-decoration-none me-3" style="color:#333;"><i class="bi bi-github fs-4"></i></a>
+          <!-- Contact Information and Social Links Column -->
+          <div class="col-12 contact-info">
+            <div class="row mx-3 mb-4 pt-3">
+              <h6 class="fw-bold mb-3">CONTACT INFORMATION:</h6>
+              <div class="contact-details">
+                <p class="mb-1 small"><i class="bi bi-telephone-fill"></i> +63 976 290 3357</p>
+                <p class="mb-4 small"><i class="bi bi-envelope-fill"></i> rowelgabrielvmangabat@gmail.com</p>
+              </div>
+
+              <div class="row pt-3">
+                <h6 class="fw-bold mb-3">SOCIAL LINKS:</h6>
+                <div class="social-links">
+                  <a href="#" class="text-decoration-none me-3" style="color:#1877F2;"><i class="bi bi-facebook fs-6" style="font-style: normal;"> Rowel Gabriel Mangabat</i></a>
+                  <a href="#" class="text-decoration-none me-3" style="color:#E4405F;"><i class="bi bi-instagram fs-6" style="font-style: normal;"> rgmngbt</i></a>
+                  <a href="#" class="text-decoration-none me-3" style="color:#333;"><i class="bi bi-github fs-6" style="font-style: normal;"> rowelgabriel</i></a>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
       </div>
 
-      <div class="col-lg-9 col-md-8 col-sm-12">
+      <div class="col-xl-9 col-lg-8 col-12">
         <div class="card">
           <div class="card-body">
             right col
