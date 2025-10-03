@@ -120,6 +120,35 @@
       height: 150px;
       object-fit: cover;
     }
+
+    /* Custom arrow buttons */
+    .custom-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #f0f0f0;
+      color: #333;
+      font-weight: 500;
+      border: none;
+      border-radius: 30px;
+      padding: 8px 18px;
+      transition: all 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #e0e0e0;
+      color: #000;
+    }
+
+    /* Arrow icons using CSS */
+    .arrow-right::after {
+      font-size: 1.2rem;
+    }
+
+    .arrow-left::before {
+      display: inline-block;
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 
@@ -175,172 +204,204 @@
       </div>
 
       <div class="col-xl-9 col-lg-8 col-12">
-        <div class="card p-5">
-          <div class="card-body">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
 
-            <h3 class="fw-bold mb-3">About Me</h3>
-            <p style="text-align: justify;">
-              Hi, I’m Rowel Gabriel V. Mangabat, a passionate BSIT student currently in my 3rd year at Polytechnic
-              University of the Philippines - Santo Tomas Campus. As an aspiring web developer, I enjoy building
-              projects that combine creativity and functionality. My journey in IT has allowed me to explore different
-              areas of technology, but I find myself most interested in creating websites and applications that can make
-              tasks easier and more engaging for users. <br><br>
+            <!-- Slide 1: About Me + Tech Stack -->
+            <div class="carousel-item active">
+              <div class="card p-5">
+                <div class="card-body">
 
-              Beyond coding, I’m also eager to learn new tools, improve my problem-solving abilities, and keep up with
-              modern tech trends. My goal is to grow as a developer while creating projects that reflect both my
-              technical knowledge and my creativity.
-            </p>
+                  <h3 class="fw-bold mb-3">About Me</h3>
+                  <p style="text-align: justify;">
+                    Hi, I’m Rowel Gabriel V. Mangabat, a passionate BSIT student currently in my 3rd year at Polytechnic
+                    University of the Philippines - Santo Tomas Campus. As an aspiring web developer, I enjoy building
+                    projects that combine creativity and functionality. My journey in IT has allowed me to explore
+                    different
+                    areas of technology, but I find myself most interested in creating websites and applications that
+                    can make
+                    tasks easier and more engaging for users. <br><br>
 
-            <h3 class="fw-bold mt-5 mb-3">Tech Stack</h3>
-            <p style="text-align: justify;">
-              Throughout my studies, I’ve gained hands-on experience with different programming languages and
-              technologies such as C, C++, Python, Java, HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, Git, and GitHub.
-              These skills have helped me work on various academic and personal projects, strengthening my foundation in
-              both front-end and back-end development.
-            </p>
-            <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
-              <!-- C -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C"
-                style="height:32px;">
-              <!-- C++ -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"
-                title="C++" style="height:32px;">
-              <!-- Python -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
-                title="Python" style="height:32px;">
-              <!-- Java -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
-                title="Java" style="height:32px;">
-              <!-- HTML -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
-                title="HTML5" style="height:32px;">
-              <!-- CSS -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
-                title="CSS3" style="height:32px;">
-              <!-- Bootstrap -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                alt="Bootstrap" title="Bootstrap" style="height:32px;">
-              <!-- JavaScript -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="JavaScript" title="JavaScript" style="height:32px;">
-              <!-- PHP -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP"
-                style="height:32px;">
-              <!-- SQL (MySQL) -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
-                title="MySQL" style="height:32px;">
-              <!-- Git -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git"
-                style="height:32px;">
-              <!-- GitHub -->
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
-                title="GitHub" style="height:32px; background: #fff; border-radius: 5px;">
+                    Beyond coding, I’m also eager to learn new tools, improve my problem-solving abilities, and keep up
+                    with
+                    modern tech trends. My goal is to grow as a developer while creating projects that reflect both my
+                    technical knowledge and my creativity.
+                  </p>
+
+                  <h3 class="fw-bold mt-5 mb-3">Tech Stack</h3>
+                  <p style="text-align: justify;">
+                    Throughout my studies, I’ve gained hands-on experience with different programming languages and
+                    technologies such as C, C++, Python, Java, HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, Git, and
+                    GitHub.
+                    These skills have helped me work on various academic and personal projects, strengthening my
+                    foundation in
+                    both front-end and back-end development.
+                  </p>
+
+                  <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C"
+                      style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                      alt="C++" title="C++" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                      alt="Python" title="Python" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                      title="Java" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                      title="HTML5" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                      title="CSS3" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                      alt="Bootstrap" title="Bootstrap" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      alt="JavaScript" title="JavaScript" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                      title="PHP" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                      title="MySQL" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                      title="Git" style="height:32px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                      alt="GitHub" title="GitHub" style="height:32px; background:#fff; border-radius:5px;">
+                  </div>
+
+                  <div class="text-center mt-4">
+                    <button class="custom-btn arrow-right" type="button" data-bs-target="#carouselExample"
+                      data-bs-slide="next">
+                      See my projects
+                    </button>
+                  </div>
+
+                </div>
+              </div>
             </div>
 
-            <h3 class="fw-bold mt-5 mb-3">My Projects</h3>
-            <p style="text-align: justify;">
-              I have worked on developing games, building websites and systems, as well as designing user interfaces
-              that focus on both usability and visual appeal. Through these projects, I am able to apply my technical
-              knowledge in programming and problem-solving while also incorporating creativity in design. This
-              combination allows me to create functional, efficient, and user-friendly outputs that meet both practical
-              and aesthetic needs. These experiences not only strengthen my skills but also give me the opportunity to
-              explore different fields in IT, helping me become more adaptable and well-rounded as I continue to grow in
-              my studies and future career.
-            </p>
+            <!-- Slide 2: My Projects -->
+            <div class="carousel-item">
+              <div class="card p-3">
+                <div class="card-body">
 
-            <div class="row mt-4" style="text-align: justify;">
-              <!-- Card 1 -->
-              <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/OS.jpg" class="card-img-top" alt="Project 1">
-                  <div class="card-body">
-                    <h6 class="card-title fw-bold" style="font-size: 0.95rem;">ALGORITHM SIMULATOR</h6>
-                    <p class="card-text" style="font-size: 0.70rem;">This interface simulates CPU Scheduling with FCFS
-                      and Worst Fit, along with Optimal and LRU page replacement, enabling efficient evaluation of
-                      scheduling and memory management strategies</p>
+                  <h3 class="fw-bold mt-3 mb-3">My Projects</h3>
+                  <p style="text-align: justify;">
+                    I have worked on developing games, building websites and systems, as well as designing user
+                    interfaces
+                    that focus on both usability and visual appeal. Through these projects, I am able to apply my
+                    technical
+                    knowledge in programming and problem-solving while also incorporating creativity in design.
+                  </p>
+
+                  <div class="row mt-4" style="text-align: justify;">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card h-100 shadow-sm">
+                        <img src="images/OS.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bold" style="font-size: 0.95rem;">ALGORITHM SIMULATOR</h6>
+                          <p class="card-text" style="font-size: 0.70rem;">This interface simulates CPU Scheduling with
+                            FCFS
+                            and Worst Fit, along with Optimal and LRU page replacement, enabling efficient evaluation of
+                            scheduling and memory management strategies</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card h-100 shadow-sm">
+                        <img src="images/DSA.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bold" style="font-size: 0.95rem;">SCHEDULING MANAGEMENT</h6>
+                          <p class="card-text" style="font-size: 0.70rem;">Scheduling Management is a user-friendly
+                            software
+                            that helps individuals and organizations efficiently manage tasks by priority and maintain
+                            organized name lists for smooth scheduling and sorting.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card h-100 shadow-sm">
+                        <img src="images/COMPROG.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bold" style="font-size: 0.95rem;">ANIME ROYALE RUMBLE</h6>
+                          <p class="card-text" style="font-size: 0.70rem;">A 2-player fighting game developed using
+                            Python,
+                            where players can choose characters and battle in different arenas. It offers an engaging
+                            and
+                            interactive experience, combining strategy and fast-paced action for competitive gameplay.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card h-100 shadow-sm">
+                        <img src="images/OOP.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bold" style="font-size: 0.95rem;">DBTK</h6>
+                          <p class="card-text" style="font-size: 0.70rem;">The DBTK Clothing Website is an e-commerce
+                            platform
+                            inspired by the famous streetwear brand DBTK, offering product browsing, secure checkout
+                            with
+                            multiple payment options, and an admin panel for managing orders and products.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card h-100 shadow-sm">
+                        <img src="images/IM-IPT.jpg" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bold" style="font-size: 0.95rem;">ISKEDMO: CLASSROOM RESERVATION
+                            SYSTEM
+                          </h6>
+                          <p class="card-text" style="font-size: 0.70rem;">“ISKEDMO” is a web-based classroom
+                            reservation
+                            system for teachers, students, and administrators that streamlines scheduling through
+                            role-based
+                            logins, reservation management, and conflict-free allocation.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-4 mb-4">
+                      <div class="card h-100 shadow-sm">
+                        <img src="images/SIA.jpg" class="card-img-top" alt="Project 6">
+                        <div class="card-body">
+                          <h6 class="card-title fw-bold" style="font-size: 0.95rem;">EMAIL GATEWAY</h6>
+                          <p class="card-text" style="font-size: 0.70rem;">Email-Gateway is an integrated system that
+                            enables
+                            sending, receiving, and managing emails directly within the platform, with all activities
+                            synchronized in real time with Gmail for a seamless and secure communication experience.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button class="custom-btn arrow-left" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        Back
+                      </button>
+                    </div>
+
                   </div>
+
                 </div>
               </div>
-
-              <!-- Card 2 -->
-              <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/DSA.jpg" class="card-img-top" alt="Project 2">
-                  <div class="card-body">
-                    <h6 class="card-title fw-bold" style="font-size: 0.95rem;">SCHEDULING MANAGEMENT</h6>
-                    <p class="card-text" style="font-size: 0.70rem;">Scheduling Management is a user-friendly software
-                      that helps individuals and organizations efficiently manage tasks by priority and maintain
-                      organized name lists for smooth scheduling and sorting.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/COMPROG.jpg" class="card-img-top" alt="Project 3">
-                  <div class="card-body">
-                    <h6 class="card-title fw-bold" style="font-size: 0.95rem;">ANIME ROYALE RUMBLE</h6>
-                    <p class="card-text" style="font-size: 0.70rem;">A 2-player fighting game developed using Python,
-                      where players can choose characters and battle in different arenas. It offers an engaging and
-                      interactive experience, combining strategy and fast-paced action for competitive gameplay.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 4 -->
-              <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/OOP.jpg" class="card-img-top" alt="Project 4">
-                  <div class="card-body">
-                    <h6 class="card-title fw-bold" style="font-size: 0.95rem;">DBTK</h6>
-                    <p class="card-text" style="font-size: 0.70rem;">The DBTK Clothing Website is an e-commerce platform
-                      inspired by the famous streetwear brand DBTK, offering product browsing, secure checkout with
-                      multiple payment options, and an admin panel for managing orders and products.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 5 -->
-              <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/IM-IPT.jpg" class="card-img-top" alt="Project 5">
-                  <div class="card-body">
-                    <h6 class="card-title fw-bold" style="font-size: 0.95rem;">ISKEDMO: CLASSROOM RESERVATION SYSTEM
-                    </h6>
-                    <p class="card-text" style="font-size: 0.70rem;">“ISKEDMO” is a web-based classroom reservation
-                      system for teachers, students, and administrators that streamlines scheduling through role-based
-                      logins, reservation management, and conflict-free allocation.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 6 -->
-              <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/SIA.jpg" class="card-img-top" alt="Project 6">
-                  <div class="card-body">
-                    <h6 class="card-title fw-bold" style="font-size: 0.95rem;">EMAIL GATEWAY</h6>
-                    <p class="card-text" style="font-size: 0.70rem;">Email-Gateway is an integrated system that enables
-                      sending, receiving, and managing emails directly within the platform, with all activities
-                      synchronized in real time with Gmail for a seamless and secure communication experience.</p>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
           </div>
+
         </div>
       </div>
 
-    </div>
-
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
