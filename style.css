@@ -1,0 +1,95 @@
+/* ---general styles--- */
+body {
+  scroll-behavior: smooth;
+}
+
+/* ---navbar styles---*/
+
+/* sections */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* sections hover */
+.navbar-nav .nav-link:hover {
+  transform: translateY(-4px);
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover i {
+  transform: translateX(4px);
+}
+
+.navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 3px;
+  background-color: #222;
+  border-radius: 2px;
+}
+
+/* hover effect disabled on the toggle bar */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link:hover::after {
+    content: none;
+  }
+}
+
+/* ---about styles--- */
+
+/* main pic */
+.main-pic {
+  border: 2.3px solid black;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* name */
+.name {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* more about me and download cv button */
+.cv-btn:hover, .about-btn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.cv-btn:active, .about-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* social link button */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+}
+
+.social-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}

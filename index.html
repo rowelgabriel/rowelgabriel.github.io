@@ -16,7 +16,7 @@
 
   <!-- Navbar -->
   <nav
-    class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top rounded lg-4 mt-sm-3 mt-2 mx-lg-5 mx-sm-4 mx-3 px-4">
+    class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top rounded lg-4 mt-sm-3 mt-2 mx-lg-5 mx-sm-4 mx-3 px-4">
     <div class="container-fluid">
       <h2 class="navbar-brand"> <i class="bi bi-person-fill me-2"></i>rowelgabriel</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,18 +26,18 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link fw-semibold text-dark mx-2" href="#about">
-              <i class="bi bi-person-circle"></i> About Me
+            <a class="nav-link fw-semibold text-dark mx-2 active" href="#about">
+              <i class="bi bi-person-circle me-1"></i> About Me
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold text-dark mx-2" href="#skills">
-              <i class="bi bi-gear-fill"></i> Skills
+            <a class="nav-link fw-semibold text-dark mx-2 active" href="#skills">
+              <i class="bi bi-gear-fill me-1"></i> Skills
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold text-dark mx-2" href="#projects">
-              <i class="bi bi-folder2-open"></i> My Projects
+            <a class="nav-link fw-semibold text-dark mx-2 active" href="#projects">
+              <i class="bi bi-folder2-open me-1"></i> My Projects
             </a>
           </li>
         </ul>
@@ -51,7 +51,7 @@
 
       <div class="row">
         <div class="col-lg-4 col-12 px-4 mt-5 text-center">
-          <img src="images/pic.jpg" alt="Rowel Gabriel" class="img-fluid rounded">
+          <img src="images/pic.jpg" alt="Rowel Gabriel" class="main-pic img-fluid rounded-circle">
           <p class="lead mt-4 fw-semibold">
             <i class="bi bi-geo-alt-fill"></i> Batangas, Philippines
           </p>
@@ -59,9 +59,9 @@
 
         <div class="col-lg-8 col-12 px-4 mt-5">
           <!-- Introduction -->
-          <p class="display-4" style="text-align:center;">Hello I'm <strong class="name">Rowel Gabriel Mangabat</strong>
+          <p class="display-6" style="text-align:center;">Hello I'm <strong class="name text-dark">Rowel Gabriel Mangabat</strong>
           </p>
-          <p class="lead" style="text-align:justify;">A passionate BSIT student currently in my 3rd year at Polytechnic
+          <p class="lead about-text" style="text-align:justify;">A passionate BSIT student currently in my 3rd year at Polytechnic
             University of the Philippines - Santo Tomas Campus. As an aspiring web developer, I enjoy building
             projects that combine creativity and functionality. My journey in IT has allowed me to explore
             different areas of technology, but I find myself most interested in creating websites and
@@ -70,22 +70,21 @@
           <!-- Buttons -->
           <div class="mt-4 justify-content-center">
             <!-- about me and cv-->
-            <a href="#skills" class="btn btn-dark me-2"><i class="bi bi-person-fill me-2"></i>More About Me</a>
-            <a href="assets/CV_Rowel_Mangabat.pdf" class="btn btn-outline-dark" download><i
-                class="bi bi-download me-2"></i>Download CV</a>
+            <a href="#skills" class="btn btn-dark me-2 about-btn">More About Me<i class="bi bi-arrow-down ms-2"></i></a>
+            <a href="assets/CV_Rowel_Gabriel_Mangabat.pdf" class="btn btn-outline-dark cv-btn" download>Download CV<i class="bi bi-download ms-2"></i></a>
             <!-- social links -->
             <div class="mt-3">
-              <a href="#about" class="text-dark text-decoration-none me-3" rel="noopener noreferrer" target="_blank">
-                <i class="bi bi-facebook fs-2"></i>
+              <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank">
+                <i class="bi bi-facebook fs-2 social-btn"></i>
               </a>
-              <a href="#about" class="text-dark text-decoration-none me-3" rel="noopener noreferrer" target="_blank">
-                <i class="bi bi-instagram fs-2"></i>
+              <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank">
+                <i class="bi bi-instagram fs-2 social-btn"></i>
               </a>
-              <a href="#about" class="text-dark text-decoration-none me-3" rel="noopener noreferrer" target="_blank">
-                <i class="bi bi-linkedin fs-2"></i>
+              <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank">
+                <i class="bi bi-linkedin fs-2 social-btn"></i>
               </a>
-              <a href="#about" class="text-dark" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github fs-2"></i>
+              <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank">
+                <i class="bi bi-github fs-2 social-btn"></i>
               </a>
             </div>
           </div>
@@ -257,7 +256,7 @@
               <h5 class="card-title">My Portfolio</h5>
               <p class="card-text">A personal website showcasing my skills, projects, and experiences as a web
                 developer.</p>
-              <a href="#about" class="btn btn-dark mt-auto" rel="noopener noreferrer">
+              <a href="#about" class="btn btn-dark mt-auto" target="_blank" rel="noopener noreferrer">
                 View Website
               </a>
             </div>
@@ -271,8 +270,7 @@
               <h5 class="card-title">iPhone Air</h5>
               <p class="card-text">A modern e-commerce concept website for iPhone Air, highlighting design and
                 features.</p>
-              <a href="#about" class="btn btn-dark mt-auto" target="_blank"
-                rel="noopener noreferrer">
+              <a href="#about" class="btn btn-dark mt-auto" target="_blank" rel="noopener noreferrer">
                 View Website
               </a>
             </div>
@@ -287,8 +285,7 @@
               <p class="card-text">A travel and tourism website showcasing Pangasinan’s beauty and culture with
                 interactive design.
               </p>
-              <a href="#about" class="btn btn-dark mt-auto" target="_blank"
-                rel="noopener noreferrer">
+              <a href="#about" class="btn btn-dark mt-auto" target="_blank" rel="noopener noreferrer">
                 View Website
               </a>
             </div>
