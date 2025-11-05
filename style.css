@@ -1,50 +1,18 @@
-/* ---general styles--- */
+/* --- general styles --- */
 body {
   scroll-behavior: smooth;
 }
 
-/* ---navbar styles---*/
-
-/* sections */
-.navbar-nav .nav-link {
-  position: relative;
-  transition: all 0.3s ease;
+/* navbar section */
+#nav-sec:hover {
+  color: white !important;
+  background-color: black;
 }
 
-/* sections hover */
-.navbar-nav .nav-link:hover {
-  transform: translateY(-4px);
-  position: relative;
-}
-
-.navbar-nav .nav-link:hover i {
-  transform: translateX(4px);
-}
-
-.navbar-nav .nav-link:hover::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 70%;
-  height: 3px;
-  background-color: #222;
-  border-radius: 2px;
-}
-
-/* hover effect disabled on the toggle bar */
-@media (max-width: 992px) {
-  .navbar-nav .nav-link:hover::after {
-    content: none;
-  }
-}
-
-/* ---about styles--- */
+/* --- about section --- */
 
 /* main pic */
 .main-pic {
-  border: 2.3px solid black;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -63,12 +31,14 @@ body {
 }
 
 /* more about me and download cv button */
-.cv-btn:hover, .about-btn:hover {
+.cv-btn:hover,
+.about-btn:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
-.cv-btn:active, .about-btn:active {
+.cv-btn:active,
+.about-btn:active {
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -80,16 +50,64 @@ body {
   justify-content: center;
   border-radius: 50%;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
 .social-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
 .social-btn:active {
   transform: translateY(1px);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* --- skills section --- */
+
+.skills-card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover{
+  transform: translateY(-7px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* --- projects section --- */
+
+/* projects cards */
+.projects-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* projects images */
+.projects-card img {
+  transition: transform 0.3s ease;
+}
+
+.projects-card:hover img {
+  transform: scale(1.05);
+}
+
+/* projects buttons */
+.projects-btn {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Button Hover Effect */
+.projects-btn:hover {
+  background-color: #f0f0f0;
+  color: black;
+  border-color: black;
+  transform: translateY(-4px);
 }
