@@ -26,18 +26,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a id="nav-sec" class="nav-link fw-semibold text-dark rounded-5 px-lg-3 mx-lg-1" href="#about">
+            <a id="nav-sec" class="nav-link fw-semibold text-dark rounded-5 px-lg-2 mx-lg-1" href="#about">
               <i class="bi bi-person-circle me-1"></i> About Me
             </a>
           </li>
           <li class="nav-item">
-            <a id="nav-sec" class="nav-link fw-semibold text-dark rounded-5 px-lg-3 mx-lg-1" href="#skills">
+            <a id="nav-sec" class="nav-link fw-semibold text-dark rounded-5 px-lg-2 mx-lg-1" href="#skills">
               <i class="bi bi-gear-fill me-1"></i> Skills
             </a>
           </li>
           <li class="nav-item">
-            <a id="nav-sec" class="nav-link fw-semibold text-dark rounded-5 px-lg-3 mx-lg-1" href="#projects">
+            <a id="nav-sec" class="nav-link fw-semibold text-dark rounded-5 px-lg-2 mx-lg-1" href="#projects">
               <i class="bi bi-folder2-open me-1"></i> My Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-sec" class="nav-link fw-semibold text-dark rounded-5 px-lg-2 mx-lg-1" href="#contact">
+              <i class="bi bi-chat-dots-fill me-1"></i> Contact
             </a>
           </li>
         </ul>
@@ -70,7 +75,7 @@
           <div class="mt-4 justify-content-center">
             <!-- about me and cv-->
             <a href="#skills" class="btn btn-dark me-2 about-btn">More About Me<i class="bi bi-arrow-down ms-2"></i></a>
-            <a href="assets/CV_Rowel_Gabriel_Mangabat.pdf" class="btn btn-outline-dark cv-btn" download>Download CV<i
+            <a href="assets/CV_Rowel_Gabriel_Mangabat.pdf" class="btn btn-outline-dark cv-btn" download onclick="alert('Not yet available'); return false;">Download CV<i
                 class="bi bi-download ms-2"></i></a>
             <!-- social links -->
             <div class="mt-3">
@@ -80,7 +85,7 @@
               <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank">
                 <i class="bi bi-instagram fs-2 social-btn"></i>
               </a>
-              <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank">
+              <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank" onclick="alert('Not yet available'); return false;">
                 <i class="bi bi-linkedin fs-2 social-btn"></i>
               </a>
               <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank">
@@ -302,6 +307,47 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container mt-5">
+
+      <h2 class="fw-bold fs-2 mx-auto mt-5 mb-4 text-center">
+        <i class="bi bi-chat-dots-fill"></i> Contact Me
+      </h2>
+
+      <div class="row g-4 text-center">
+        <!-- email -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card shadow-sm h-100 contact-card py-1">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-envelope-fill me-2"></i>Email</h5>
+              <p class="card-text">rowelgabrielvmangabat@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <!-- phone number -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card shadow-sm h-100 contact-card py-1">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi-telephone-fill me-2"></i>Phone Number</h5>
+              <p class="card-text">+63 976 290 3357</p>
+            </div>
+          </div>
+        </div>
+        <!-- location -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card shadow-sm h-100 contact-card py-1">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-geo-alt-fill me-2"></i>Location</h5>
+              <p class="card-text">Batangas, Philippines</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

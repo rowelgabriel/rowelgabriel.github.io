@@ -64,15 +64,20 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-/* --- skills section --- */
+/* --- skills/contacts section --- */
 
-.skills-card{
+.skills-card, .contact-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills-card:hover{
+.skills-card:hover {
   transform: translateY(-7px);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
 /* --- projects section --- */
@@ -104,7 +109,6 @@ body {
   border: 2px solid transparent;
 }
 
-/* Button Hover Effect */
 .projects-btn:hover {
   background-color: #f0f0f0;
   color: black;
