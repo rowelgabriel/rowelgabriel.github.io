@@ -94,15 +94,6 @@ body {
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* projects images */
-.projects-card img {
-  transition: transform 0.3s ease;
-}
-
-.projects-card:hover img {
-  transform: scale(1.05);
-}
-
 /* projects buttons */
 .projects-btn {
   transition: all 0.3s ease;
