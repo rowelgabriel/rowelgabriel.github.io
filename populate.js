@@ -4,7 +4,7 @@ for (var i = 0; i < projects_data.length; i++) {
   projects_gallery.innerHTML +=
   `    
     <div class="col-lg-4 col-md-6 col-12">
-      <div class="card shadow h-100 projects-card">
+      <div class="card shadow h-100">
         <img src="`+ projects_data[i].image_path + `" class="card-img-top">
           <div class="card-body d-flex flex-column mx-2">
             <h5 class="card-title">`+ projects_data[i].project_name + `</h5>
@@ -25,7 +25,7 @@ for (var i = 0; i < cs_data.length; i++) {
   core_skills.innerHTML +=
   `
     <div class="col-12">
-      <div class="card shadow-sm h-100 px-4 skills-card">
+      <div class="card shadow-sm h-100 px-4">
         <div class="card-body">
           <h5 class="card-title text-center">
             <i class="`+ cs_data[i].cs_icon + ` me-2 `+ cs_data[i].icon_color + `"></i>`+ cs_data[i].cs + `
@@ -58,7 +58,7 @@ for (var i = 0; i < ts_data.length; i++) {
 
   tech_stack.innerHTML += `
     <div class="col-12">
-      <div class="card shadow-sm h-100 px-4 skills-card">
+      <div class="card shadow-sm h-100 px-4">
         <div class="card-body">
           <h5 class="card-title mb-2 d-flex justify-content-center align-items-center gap-2">
             ${ts_data[i].ts}
@@ -78,7 +78,7 @@ var contacts = document.getElementById("contacts");
 for (var i = 0; i < contact_data.length; i++) {
   contacts.innerHTML += `
     <div class="col-lg-4 col-md-6 col-12">
-      <div class="card shadow-sm h-100 contact-card py-1">
+      <div class="card shadow-sm h-100 py-1">
         <div class="card-body">
           <h5 class="card-title">
             <i class="${contact_data[i].icon} me-2"></i>
