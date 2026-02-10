@@ -3,12 +3,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* navbar section */
-#nav-sec:hover {
-  color: white !important;
-  background-color: black;
-}
-
 /* --- about section --- */
 
 /* main pic */
