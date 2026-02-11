@@ -57,84 +57,50 @@
     </div>
   </nav>
 
-  <!-- About Me Section -->
+  <!-- About Section -->
   <section id="about" class="py-5">
-    <div class="container mt-lg-5 mt-md-4 mt-3">
-
-      <div class="row">
-        <div class="col-lg-4 col-12 px-4 mt-5 text-center">
-          <img src="images/pic.jpg" alt="Rowel Gabriel" class="main-pic img-fluid rounded-circle">
+    <div class="container mt-5 px-md-5 px-4">
+      <div class="row align-items-center text-center">
+        <div class="col-xl-4 mb-4 mb-xl-0">
+          <img src="images/light_pic.jpg" class="img-fluid rounded-circle shadow" style="height:310px;">
         </div>
-
-        <div class="col-lg-8 col-12 px-4 mt-5">
-          <!-- Introduction -->
-          <p class="display-6" style="text-align:center;">
-            Hello I'm <strong class="name text-dark">Rowel Gabriel Mangabat</strong>
-          </p>
-          <p class="lead about-text" style="text-align:justify;">
+        <div class="col-xl-8">
+          <div class="fs-1 fw-bold mb-3">Hello, I'm Rowel Gabriel Mangabat</div>
+          <p class="lead mb-4" style="text-align:justify;">
             A passionate BSIT student currently in my 3rd year at Polytechnic University of the Philippines -
             Santo Tomas Campus. As an aspiring web developer, I enjoy building projects that combine creativity
             and functionality. My journey in IT has allowed me to explore different areas of technology, but I
             find myself most interested in creating websites and applications that can make tasks easier and
             more engaging for users.
           </p>
-          <!-- Buttons -->
-          <div class="mt-4 justify-content-center">
-            <!-- about me and cv-->
-            <a href="#skills" class="btn btn-dark me-2 about-btn">More About Me<i class="bi bi-arrow-down ms-2"></i></a>
-            <a href="assets/CV_Rowel_Gabriel_Mangabat.pdf" class="btn btn-outline-dark cv-btn" download
-              onclick="alert('Not yet available'); return false;">Download CV<i class="bi bi-download ms-2"></i></a>
-            <!-- social links -->
-            <div class="mt-3">
-              <a href="https://www.facebook.com/rowelgabriel.mangabat" class="text-decoration-none text-dark me-3"
-                rel="noopener noreferrer" target="_blank">
-                <i class="bi bi-facebook fs-2 social-btn"></i>
-              </a>
-              <a href="https://www.instagram.com/rgmngbt" class="text-decoration-none text-dark me-3"
-                rel="noopener noreferrer" target="_blank">
-                <i class="bi bi-instagram fs-2 social-btn"></i>
-              </a>
-              <a href="#about" class="text-decoration-none text-dark me-3" rel="noopener noreferrer" target="_blank"
-                onclick="alert('Not yet available'); return false;">
-                <i class="bi bi-linkedin fs-2 social-btn"></i>
-              </a>
-              <a href="https://github.com/rowelgabriel" class="text-decoration-none text-dark me-3"
-                rel="noopener noreferrer" target="_blank">
-                <i class="bi bi-github fs-2 social-btn"></i>
-              </a>
-            </div>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://github.com/rowelgabriel" target="_blank" class="btn btn-outline-dark">
+              <i class="bi bi-github me-md-2 me-0"></i><span class="d-md-inline d-none">Github</span>
+            </a>
+            <a href="#about" target="_blank" class="btn btn-outline-dark" onclick="alert('Not yet available'); return false;">
+              <i class="bi bi-linkedin me-md-2 me-0"></i><span class="d-md-inline d-none">LinkedIn</span>
+            </a>
+            <a href="https://instagram.com/rgmngbt" target="_blank" class="btn btn-outline-dark">
+              <i class="bi bi-instagram me-md-2 me-0"></i><span class="d-md-inline d-none">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/rowelgabriel.mangabat" target="_blank" class="btn btn-outline-dark">
+              <i class="bi bi-facebook me-md-2 me-0"></i><span class="d-md-inline d-none">Facebook</span>
+            </a>
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" class="py-5">
     <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-          <h2 class="fw-bold fs-2 mx-auto mb-4 text-center">
-            <i class="bi bi-gear-fill"></i> Skills
-          </h2>
-          <p class="lead text-center mb-5">
-            I have developed a balanced set of skills that allow me to tackle projects efficiently. From strong
-            problem-solving and communication abilities to hands-on technical expertise, I strive to deliver
-            high-quality results while continuously learning and improving in the ever-evolving world of technology.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
+      <div class="h2 fw-bold mx-auto mb-4 text-center"><i class="bi bi-gear-fill me-2"></i>Skills</div>
       <div class="row g-4">
         <div class="col-lg-6 col-12">
-          <h4 class="mb-3 text-center"><i class="bi bi-lightning-fill me-2"></i>Core Skills</h4>
           <div class="row g-3" id="core_skills"></div>
         </div>
         <div class="col-lg-6 col-12">
-          <h4 class="mb-3 text-center"><i class="bi bi-laptop-fill me-2"></i>Tech Stack</h4>
           <div class="row g-3" id="tech_stack"></div>
         </div>
       </div>
@@ -144,15 +110,7 @@
   <!-- Projects Section -->
   <section id="projects" class="py-5">
     <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-          <h2 class="fw-bold fs-2 mx-auto mb-4 text-center">
-            <i class="bi bi-folder2-open"></i> My Projects
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="container">
+      <div class="h2 fw-bold mx-auto mb-4 text-center"><i class="bi bi-folder2-open me-2"></i>My Projects</div>
       <div class="row g-4" id="projects_gallery"></div>
     </div>
   </section>
@@ -160,28 +118,20 @@
   <!-- Contact Section -->
   <section id="contact" class="py-5">
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="fw-bold fs-2 mx-auto mb-4 text-center">
-            <i class="bi bi-chat-dots-fill"></i> Contact Me
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row g-4 text-center" id="contacts"></div>
+      <div class="h2 fw-bold mx-auto mb-4 text-center"><i class="bi bi-chat-dots-fill me-2"></i>Contact Me</div>
+      <div class="row g-4 justify-content-center text-center" id="contacts"></div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container-fluid bg-light py-2">
-      <div class="row">
-        <div class="col fw-semibold text-center my-2 align-items-center">
-          <p>
-            <img class="me-1 pb-1" src="images/logo-black.png" height="23">
+    <div class="container-fluid bg-light border-top border-dark border-3 py-3">
+      <div class="row align-items-center text-center">
+        <div class="col">
+          <div class="fs-6 fw-semibold">
+            <img class="me-1" src="images/logo-black.png" height="23">
             rowelgabriel | Personal Portfolio
-          </p>
+          </div>
         </div>
       </div>
     </div>
