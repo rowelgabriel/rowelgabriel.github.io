@@ -1,3 +1,13 @@
+.navbar-toggler, .theme-button {
+  width: 45px;
+  height: 42px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+}
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -7,13 +17,31 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
-.projects-btn {
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
+body.dark-mode .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
 }
 
-.projects-btn:hover {
-  background-color: #f0f0f0;
-  color: black;
-  border-color: black;
+body.dark-mode {
+  background: #121212 !important;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .container-fluid,
+body.dark-mode footer {
+  background-color: #1f1f1f !important;
+  border-color: #333 !important;
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar-brand,
+body.dark-mode footer .fs-6,
+body.dark-mode .fs-5 {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .card {
+  background-color: #1f1f1f !important;
+  color: #e0e0e0;
+  border: 2px solid #333 !important;
 }

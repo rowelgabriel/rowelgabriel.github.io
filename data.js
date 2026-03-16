@@ -1,11 +1,5 @@
 var projects_data = [
   {
-    "project_name": "Personal Portfolio",
-    "project_description": "A personal portfolio website designed to showcase my skills, projects, and background as a web developer, featuring a clean layout, responsive design, and clear presentation of my work and experience.",
-    "project_link": "https://rowelgabriel.github.io",
-    "image_path": "images/portfolio.png"
-  },
-  {
     "project_name": "iPhone Air",
     "project_description": "A modern product showcase website for the iPhone Air that highlights its design, features, and specifications using sleek visuals, smooth layout structure, and a user-focused presentation experience.",
     "project_link": "https://rowelgabriel.github.io/iPhoneAir",

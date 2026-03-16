@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/jpeg" href="images/logo-black.png">
+  <link rel="icon" type="image/jpeg" href="images/plain-black.png">
   <title>rowelgabriel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -15,16 +15,16 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top px-lg-4 px-2 py-3 border-bottom border-dark border-3">
+  <nav class="navbar navbar-expand-lg bg-light fixed-top px-lg-4 p-2 m-3 rounded-4 border border-dark border-2">
     <div class="container-fluid">
       <div class="fw-bold navbar-brand mx-lg-2">
-        <img class="d-inline-block align-text-top me-1" src="images/logo-black.png" height="30">
+        <img class="d-inline-block align-text-top me-1 logo" src="images/logo-black.png" height="30">
       </div>
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <button class="navbar-toggler ms-auto p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="btn btn-outline-dark border-2 ms-2 d-lg-none">
+      <button class="btn btn-outline-dark border-2 ms-2 d-lg-none theme-button" onclick="changeTheme()">
         <i class="bi bi-moon-fill"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -51,8 +51,8 @@
           </li>
         </ul>
       </div>
-      <button class="btn btn-outline-dark border-2 ms-2 d-none d-lg-inline-block mx-lg-2">
-        <i class="bi bi-moon-fill"></i>
+      <button class="btn btn-outline-dark border-2 ms-2 d-none d-lg-inline-block mx-lg-2 theme-button"
+        onclick="changeTheme()"><i class="bi bi-moon-fill"></i>
       </button>
     </div>
   </nav>
@@ -62,11 +62,12 @@
     <div class="container mt-5 px-md-5 px-4">
       <div class="row align-items-center text-center">
         <div class="col-xl-4 mb-4 mb-xl-0">
-          <img src="images/light_pic.jpg" class="img-fluid rounded-circle shadow" style="height:310px;">
+          <img id="profile-pic" src="images/light_pic.jpg" class="img-fluid rounded-circle shadow"
+            style="max-width:310px;">
         </div>
         <div class="col-xl-8">
           <div class="fs-1 fw-bold mb-3">Hello, I'm Rowel Gabriel Mangabat</div>
-          <p class="lead mb-4" style="text-align:justify;">
+          <p class="fs-5 text-muted mb-4" style="text-align:justify;">
             A passionate BSIT student currently in my 3rd year at Polytechnic University of the Philippines -
             Santo Tomas Campus. As an aspiring web developer, I enjoy building projects that combine creativity
             and functionality. My journey in IT has allowed me to explore different areas of technology, but I
@@ -77,7 +78,8 @@
             <a href="https://github.com/rowelgabriel" target="_blank" class="btn btn-outline-dark">
               <i class="bi bi-github me-md-2 me-0"></i><span class="d-md-inline d-none">Github</span>
             </a>
-            <a href="#about" target="_blank" class="btn btn-outline-dark" onclick="alert('Not yet available'); return false;">
+            <a href="#about" target="_blank" class="btn btn-outline-dark"
+              onclick="alert('Not yet available'); return false;">
               <i class="bi bi-linkedin me-md-2 me-0"></i><span class="d-md-inline d-none">LinkedIn</span>
             </a>
             <a href="https://instagram.com/rgmngbt" target="_blank" class="btn btn-outline-dark">
@@ -95,12 +97,13 @@
   <!-- Skills Section -->
   <section id="skills" class="py-5">
     <div class="container mt-5">
-      <div class="h2 fw-bold mx-auto mb-4 text-center"><i class="bi bi-gear-fill me-2"></i>Skills</div>
       <div class="row g-4">
         <div class="col-lg-6 col-12">
+          <div class="h3 fw-bold mx-auto mb-4 text-center"><i class="bi bi-tools me-2"></i>Core Skills</div>
           <div class="row g-3" id="core_skills"></div>
         </div>
         <div class="col-lg-6 col-12">
+          <div class="h3 fw-bold mx-auto mb-4 text-center"><i class="bi bi-stack me-2"></i>Tech Stack</div>
           <div class="row g-3" id="tech_stack"></div>
         </div>
       </div>
@@ -125,11 +128,11 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container-fluid bg-light border-top border-dark border-3 py-3">
+    <div class="container-fluid bg-light border-top border-dark border-2 py-3">
       <div class="row align-items-center text-center">
         <div class="col">
           <div class="fs-6 fw-semibold">
-            <img class="me-1" src="images/logo-black.png" height="23">
+            <img class="me-1 logo" src="images/logo-black.png" height="23">
             rowelgabriel | Personal Portfolio
           </div>
         </div>
@@ -139,6 +142,43 @@
 
   <script src="data.js"></script>
   <script src="populate.js"></script>
+  <script>
+    function changeTheme() {
+      document.body.classList.toggle('dark-mode');
+
+      const buttons = document.querySelectorAll('.theme-button i.bi');
+      buttons.forEach(btnIcon => {
+        if (document.body.classList.contains('dark-mode')) {
+          btnIcon.classList.remove('bi-moon-fill');
+          btnIcon.classList.add('bi-sun-fill');
+        } else {
+          btnIcon.classList.remove('bi-sun-fill');
+          btnIcon.classList.add('bi-moon-fill');
+        }
+      });
+
+      const outlineButtons = document.querySelectorAll('.btn-outline-dark, .btn-outline-light');
+      outlineButtons.forEach(btn => {
+        if (btn.classList.contains('btn-outline-dark')) {
+          btn.classList.remove('btn-outline-dark');
+          btn.classList.add('btn-outline-light');
+        } else {
+          btn.classList.remove('btn-outline-light');
+          btn.classList.add('btn-outline-dark');
+        }
+      });
+
+      const profilePic = document.getElementById('profile-pic');
+      profilePic.src = document.body.classList.contains('dark-mode') ? 'images/dark_pic.jpg' : 'images/light_pic.jpg';
+
+      const logos = document.querySelectorAll('.logo');
+      logos.forEach(logo => {
+        logo.src = document.body.classList.contains('dark-mode')
+          ? 'images/logo-white.png'
+          : 'images/logo-black.png';
+      });
+    }
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

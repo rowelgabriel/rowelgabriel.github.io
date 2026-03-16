@@ -9,7 +9,7 @@ for (var i = 0; i < projects_data.length; i++) {
           <div class="card-body d-flex flex-column mx-2">
             <h5 class="card-title">`+ projects_data[i].project_name + `</h5>
             <p class="card-text" style="text-align: justify;">`+ projects_data[i].project_description + `</p>
-            <a href="`+ projects_data[i].project_link + `" class="btn btn-dark rounded border-2 projects-btn" target="_blank">
+            <a href="`+ projects_data[i].project_link + `" class="btn btn-outline-dark rounded" target="_blank">
               View Website<i class="bi bi-globe ms-2"></i>
             </a>
           </div>
